@@ -66,7 +66,8 @@ namespace midtermBookStorePOS
 					Console.WriteLine("Please input the amount of books you'd like to order.");
 					quantity = int.Parse(Console.ReadLine());
 				
-					Program.Cart.Add(Books[userNumSelectMenu -1]);					
+					Program.Cart.Add(Books[userNumSelectMenu -1]);
+                    toMenu = true;
                 }	
                 toMenu = backToMenu();
             }
